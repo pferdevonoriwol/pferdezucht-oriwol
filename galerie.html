@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Impressionen aus der Pferdezucht Oriwol in Alt Falkenhagen.">
+  <title>Galerie · Pferdezucht Oriwol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Pferdezucht Oriwol – Startseite">
+      <img src="assets/images/logo-oriwol2.png" alt="Pferdezucht Oriwol">
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="hauptmenue">
+      <span></span><span></span><span></span><span class="sr-only">Menü öffnen</span>
+    </button>
+    <nav id="hauptmenue" class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html#start">Startseite</a>
+      <a href="index.html#pferde">Unsere Pferde</a>
+      <a href="index.html#nachzucht">Nachzucht</a>
+      <a href="galerie.html" class="active">Galerie</a>
+      <a href="index.html#kontakt">Kontakt</a>
+    </nav>
+    <span class="header-place">Alt Falkenhagen</span>
+  </header>
+
+  <main id="inhalt">
+    <section class="gallery-intro">
+      <div class="section-label"><span>Impressionen</span> Galerie</div>
+      <h1>Einblicke<br>in unseren Alltag</h1>
+      <nav class="gallery-categories" aria-label="Galeriekategorien">
+        <a href="#stuten">Stuten</a>
+        <a href="#nachzucht">Nachzucht</a>
+        <a href="#hofleben">Hofleben</a>
+      </nav>
+    </section>
+
+    <section class="gallery-category section" id="stuten">
+      <div class="gallery-category-heading"><span>01</span><h2>Unsere Stuten</h2></div>
+      <div class="category-slider slider" data-slider data-autoplay="false">
+        <article class="slide is-active" data-slide><img src="assets/images/gallery_stuten_1.JPG" alt="Chandana"></article>
+      <article class="slide is-active" data-slide><img src="assets/images/gallery_stuten_2.JPG" alt="Luci"></article>
+      <article class="slide is-active" data-slide><img src="assets/images/gallery_stuten_3.JPG" alt="Chandana"></article>
+        <div class="slider-controls category-slider-controls">
+          <button type="button" data-prev aria-label="Vorheriges Bild der Stuten">←</button>
+          <span><b data-current>01</b> / <span data-total>01</span></span>
+          <button type="button" data-next aria-label="Nächstes Bild der Stuten">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-category gallery-dark section" id="nachzucht">
+      <div class="gallery-category-heading"><span>02</span><h2>Nachzucht</h2></div>
+      <div class="category-slider slider category-slider-dark" data-slider data-autoplay="false">
+        <article class="slide is-active" data-slide><img src="assets/images/gallery_nachzucht_1.JPG" alt="Platzhalter für ein Bild unserer Nachzucht"></article>
+         <article class="slide is-active" data-slide><img src="assets/images/gallery_nachzucht_2.JPG" alt="Platzhalter für ein Bild unserer Nachzucht"></article>
+        <div class="slider-controls category-slider-controls">
+          <button type="button" data-prev aria-label="Vorheriges Bild der Nachzucht">←</button>
+          <span><b data-current>01</b> / <span data-total>01</span></span>
+          <button type="button" data-next aria-label="Nächstes Bild der Nachzucht">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-category section" id="hofleben">
+      <div class="gallery-category-heading"><span>03</span><h2>Hofleben</h2></div>
+      <div class="category-slider slider" data-slider data-autoplay="false">
+        <article class="slide is-active" data-slide><img src="assets/images/gallery_hofleben_1.JPG" alt="Platzhalter für ein Bild aus unserem Hofleben"></article>
+        <!-- Weitere Bilder: Diesen Block kopieren, unter dem ersten article einfügen und Dateiname sowie Beschreibung ersetzen:
+        <article class="slide" data-slide aria-hidden="true"><img src="assets/images/DEIN-BILD.jpg" alt="Kurze Bildbeschreibung"></article>
+        -->
+        <div class="slider-controls category-slider-controls">
+          <button type="button" data-prev aria-label="Vorheriges Bild aus dem Hofleben">←</button>
+          <span><b data-current>01</b> / <span data-total>01</span></span>
+          <button type="button" data-next aria-label="Nächstes Bild aus dem Hofleben">→</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/images/logo-oriwol3.png" alt="">
+    <p>© <span data-year></span> Pferdezucht Oriwol</p>
+    <div><a href="index.html#kontakt">Kontakt</a><a href="impressum.html">Impressum</a><a href="index.html">Startseite</a></div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
